@@ -2,8 +2,16 @@ package git_test2;
 
 public class Hello {
 
-	String message = "ì•ˆë…•í•˜ì„¸ìš”";
-
+	String message;
+	
+	public Hello() {
+		this("¾È³çÇÏ¼¼¿ä");
+	}
+	
+	public Hello(String message) {
+		this.message = message;
+		
+	}
 	public void say() {
 		System.out.println(message);
 	}
